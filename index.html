@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invitación de Matrimonio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            font-family: 'Segoe UI', sans-serif;
+            scroll-behavior: smooth;
+            color: #333;
+        }
+
+        .top-links {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 10;
+        }
+
+        .top-links a {
+            margin-right: 20px;
+            font-size: 0.95rem;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            padding-bottom: 2px;
+            border-bottom: 1px solid transparent;
+            transition: color 0.3s ease, border-bottom 0.3s ease;
+        }
+
+        .top-links a:hover {
+            color: #fdd;
+            border-bottom: 1px solid #fdd;
+        }
+
+        /* Sección de bienvenida */
+        .hero {
+            height: 100vh;
+            background-image: url('dyo1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            padding-bottom: 20vh;
+        }
+
+        .hero-content {
+            text-align: center;
+            color: white;
+            z-index: 2;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        .scroll-down {
+            display: inline-block;
+            margin-top: 20px;
+            font-size: 2rem;
+            color: white;
+            text-decoration: none;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(8px);
+            }
+        }
+
+        /* Sección de contenido */
+        .content {
+            background-image: url('dyo1.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 60px 20px;
+        }
+
+        .content-box {
+            max-width: 700px;
+            margin: auto;
+            background-color: rgba(255, 255, 255, 0.92);
+            padding: 40px 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h2 {
+            color: #a14c4c;
+            margin-bottom: 20px;
+        }
+
+        h3,
+        h4 {
+            color: #b85c5c;
+            margin-top: 30px;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #2d2d2d;
+        }
+
+        .info-line {
+            font-size: 1.1rem;
+            margin: 10px 0;
+        }
+
+        ul.details {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 10px;
+        }
+
+        ul.details li {
+            margin: 8px 0;
+        }
+
+        hr {
+            margin: 30px auto;
+            width: 60%;
+            border: 1px solid #f3d9d9;
+        }
+
+        button {
+            background-color: #b85c5c;
+            color: white;
+            font-size: 1rem;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #a14949;
+        }
+
+        .gift-link {
+            font-size: 0.95rem;
+            color: #924848;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid transparent;
+            transition: color 0.3s ease, border-bottom 0.3s ease;
+        }
+
+        .gift-link:hover {
+            color: #a14c4c;
+            border-bottom: 1px solid #d9a4a4;
+        }
+
+        @media (max-width: 600px) {
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .content-box {
+                padding: 25px 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Enlaces superiores -->
+    <div class="top-links">
+        <a href="confirmacion.html">Confirmar asistencia</a>
+        <a href="regalos.html">Lista de regalos</a>
+    </div>
+
+    <!-- Hero con texto desplazado hacia abajo -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>¡Nos Casamos!</h1>
+            <a href="#info" class="scroll-down">↓</a>
+        </div>
+    </section>
+
+    <!-- Contenido -->
+    <section id="info" class="content">
+        <div class="content-box">
+            <h2>✨ Nos Casamos ✨</h2>
+            <p>Con mucha alegría queremos compartir con ustedes este momento tan especial en nuestras vidas…</p>
+
+            <h3>Diana &amp; Orlando</h3>
+
+            <p>Tenemos el honor de invitarles a la celebración de nuestra <strong>Boda Civil</strong>, que se realizará:
+            </p>
+
+            <ul class="details">
+                <li>📍 <strong>Lugar:</strong> Palacio de la Municipalidad de Lima</li>
+                <li>📅 <strong>Fecha:</strong> Jueves, 12 de septiembre de 2025</li>
+                <li>🕚 <strong>Hora:</strong> 11:00 a.m.</li>
+            </ul>
+
+            <p>Luego del acto civil, los esperamos para compartir juntos una tarde inolvidable:</p>
+
+            <ul class="details">
+                <li>🥂 <strong>Recepción:</strong> A partir de las 4:00 p.m.</li>
+                <li>📍 El local será informado con previa confirmación de asistencia.</li>
+            </ul>
+
+            <p><strong>Código de vestimenta:</strong> Formal<br>
+                <em>(Se solicita amablemente evitar los colores perla y blanco)</em>
+            </p>
+
+            <p>Será un honor contar con su presencia en este día tan especial.</p>
+
+            <h4>¡Los esperamos!</h4>
+
+            <h3>Confirma tu asistencia</h3>
+            <p>
+                <a href="confirmacion.html">
+                    <button>Confirma tu asistencia</button>
+                </a>
+            </p>
+
+            <h4>Regalos</h4>
+            <p>
+                <a href="regalos.html" class="gift-link">→ Aquí cómo hacernos llegar tu regalo</a>
+            </p>
+        </div>
+    </section>
+</body>
+
+</html>
