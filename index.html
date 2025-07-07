@@ -5,6 +5,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Invitación de Matrimonio</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Allura&family=Lora:wght@400;500&family=Playfair+Display:wght@500&display=swap"
+        rel="stylesheet">
+
     <style>
         * {
             margin: 0;
@@ -15,9 +21,10 @@
         html,
         body {
             height: 100%;
-            font-family: 'Segoe UI', sans-serif;
+            font-family: 'Lora', serif;
             scroll-behavior: smooth;
             color: #333;
+            background: #fdfcf9;
         }
 
         .top-links {
@@ -43,7 +50,6 @@
             border-bottom: 1px solid #fdd;
         }
 
-        /* Sección de bienvenida */
         .hero {
             height: 100vh;
             background-image: url('dyo1.jpg');
@@ -64,9 +70,13 @@
         }
 
         .hero-content h1 {
-            font-size: 3rem;
-            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+            font-family: 'Allura', cursive;
+            font-size: 4rem;
+            color: #c9a14a;
+            font-weight: 400;
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
         }
+
 
         .scroll-down {
             display: inline-block;
@@ -89,7 +99,6 @@
             }
         }
 
-        /* Sección de contenido */
         .content {
             background-image: url('dyo1.jpg');
             background-size: cover;
@@ -108,24 +117,28 @@
         }
 
         h2 {
-            color: #a14c4c;
+            font-family: 'Allura', cursive;
+            font-size: 2.3rem;
+            color: #c9a14a;
             margin-bottom: 20px;
         }
 
-        h3,
-        h4 {
-            color: #b85c5c;
+        h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: #6d4c41;
             margin-top: 30px;
         }
 
-        .highlight {
-            font-weight: bold;
-            color: #2d2d2d;
+        h4 {
+            font-size: 1.4rem;
+            color: #a58256;
+            margin-top: 20px;
         }
 
-        .info-line {
-            font-size: 1.1rem;
-            margin: 10px 0;
+        .highlight {
+            font-weight: 600;
+            color: #c19c6d;
         }
 
         ul.details {
@@ -141,11 +154,11 @@
         hr {
             margin: 30px auto;
             width: 60%;
-            border: 1px solid #f3d9d9;
+            border: 1px solid #f3e5d0;
         }
 
         button {
-            background-color: #b85c5c;
+            background-color: #c19c6d;
             color: white;
             font-size: 1rem;
             padding: 12px 24px;
@@ -153,15 +166,16 @@
             border-radius: 6px;
             cursor: pointer;
             transition: background-color 0.3s ease;
+            font-family: 'Lora', serif;
         }
 
         button:hover {
-            background-color: #a14949;
+            background-color: #a58256;
         }
 
         .gift-link {
             font-size: 0.95rem;
-            color: #924848;
+            color: #a58256;
             text-decoration: none;
             font-weight: 500;
             border-bottom: 1px solid transparent;
@@ -169,21 +183,30 @@
         }
 
         .gift-link:hover {
-            color: #a14c4c;
-            border-bottom: 1px solid #d9a4a4;
+            color: #c19c6d;
+            border-bottom: 1px solid #c19c6d;
         }
 
         @media (max-width: 600px) {
             .hero-content h1 {
-                font-size: 2rem;
+                font-size: 2.5rem;
             }
 
             .content-box {
                 padding: 25px 15px;
             }
+
+            h2 {
+                font-size: 1.9rem;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+            }
         }
     </style>
 </head>
+
 
 <body>
     <!-- Enlaces superiores -->
@@ -207,6 +230,7 @@
             <p>Con mucha alegría queremos compartir con ustedes este momento tan especial en nuestras vidas…</p>
 
             <h3>Diana &amp; Orlando</h3>
+            <br>
 
             <p>Tenemos el honor de invitarles a la celebración de nuestro <strong>Matrimonio Civil</strong>, que se realizará:
             </p>
@@ -233,15 +257,17 @@
             <h4>¡Los esperamos!</h4>
 
             <h3>Confirma tu asistencia</h3>
+            <br>
             <p>
                 <a href="confirmacion.html">
-                    <button>Confirma tu asistencia</button>
+                    <button>Registrate</button>
                 </a>
             </p>
 
-            <h4>Regalos</h4>
+            <h3>Regalos</h3>
+            <br>
             <p>
-                <a href="regalos.html" class="gift-link">→ Aquí cómo hacernos llegar tu regalo</a>
+                <a href="regalos.html" class="gift-link">→ Aquí cómo hacernos llegar tu presente</a>
             </p>
         </div>
     </section>
