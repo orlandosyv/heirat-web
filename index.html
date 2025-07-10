@@ -70,6 +70,7 @@
         .top-links a:hover {
             color: #fdd;
             border-bottom: 1px solid #fdd;
+            z-index: 20; /* más alto que el z-index del texto de la frase */
         }
 
         .hero {
@@ -82,30 +83,74 @@
             display: flex;
             justify-content: center;
             align-items: flex-end;
-            padding-bottom: 20vh;
+            padding-bottom: 6vh;
+
         }
 
         .hero-content {
             text-align: center;
             color: white;
-            z-index: 2;
+            z-index: 3;
         }
+
+        .hero-phrase {
+            position: absolute;
+            top: 40px; /* Ajusta según lo que te guste */
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            color: white;
+            font-family: 'Allura', cursive;
+            font-size: 1.6rem; /* Más pequeño que los títulos */
+            text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+            z-index: 10;
+        }
+
+        .hero-phrase h2 {
+            color: white !important;
+            font-size: 2.4rem;
+            font-weight: 150;
+            margin: 0;
+        }
+
+
+        .hero-phrase h4 {
+            color: white !important;
+            margin-top: 5px;
+            font-size: 2.2rem;
+            font-weight: 150;
+        }
+
+        @media (max-width: 600px) {
+                .hero-phrase {
+                    top: 80px; /* más bajo en móviles para que no choque */
+                    font-size: 0.5rem;
+                }
+
+                .hero-phrase h2 {                    /* más bajo en móviles para que no choque */
+                    font-size: 1.8rem;
+                }
+                .hero-phrase h4 {                    /* más bajo en móviles para que no choque */
+                    font-size: 1.5rem;
+                }
+
+}
 
         .hero-content h1 {
             font-family: 'Allura', cursive;
-            font-size: 4rem;
+            font-size: 3.2rem;
             color: white ;
              /* #c9a14a */
-            font-weight: 400;
+            font-weight: 320;
             text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
         }
 
         .hero-content h3 {
             font-family: 'Allura', cursive;
-            font-size: 4rem;
+            font-size: 3.2rem;
             color: white ;
              /* #c9a14a */
-            font-weight: 400;
+            font-weight: 320;
             text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
         }
 
@@ -221,7 +266,7 @@
 
         @media (max-width: 600px) {
             .hero-content h1 {
-                font-size: 2.5rem;
+                font-size: 2.4rem;
             }
 
             .content-box {
@@ -233,7 +278,7 @@
             }
 
             h3 {
-                font-size: 1.5rem;
+                font-size: 1.2rem;
             }
         }
     </style>
@@ -249,6 +294,10 @@
 
     <!-- Hero con texto desplazado hacia abajo -->
     <section class="hero">
+        <div class="hero-phrase">
+            <h2>"... Y en cada comienzo vive una magia que nos protege y nos ayuda a vivir."</h2>
+            <h4>H. Hesse</h4>
+        </div>
         <div class="hero-content">
             <h1>¡Nos Casamos!</h1>
             <h3>Diana &amp; Orlando</h3>
@@ -260,12 +309,12 @@
     <section id="info" class="content">
         <div class="content-box">
             <h2>✨ Nos Casamos ✨</h2>
-            <p>Con mucha alegría queremos compartir con ustedes este momento tan especial en nuestras vidas…</p>
+            <p>Con mucha alegría queremos compartir con ustedes este momento especial</p>
 
             <h3>Diana &amp; Orlando</h3>
             <br>
 
-            <p>Tenemos el honor de invitarles a la celebración de nuestro Matrimonio Civil, que se realizará:</p>
+            <p>Tenemos el honor de invitarles a la celebración de nuestro Matrimonio Civil, que se llevará a cabo en</p>
 
             <ul class="details">
                 <li>Lugar: Palacio Municipal de Lima</li>
@@ -273,7 +322,7 @@
                 <li>Hora: 10:30 a.m.</li>
             </ul>
             <br>
-            <p>Luego del acto civil, los esperamos para compartir juntos una tarde inolvidable:</p>
+            <p>Luego del acto civil, los esperamos para compartir juntos una tarde inolvidable</p>
 
             <ul class="details">
                 <li>Recepción: 3:30 p.m.</li>
